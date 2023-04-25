@@ -1,0 +1,5 @@
+.DS_Store
+log/*
+coverprofile.out
+lastupdate.tmp
+five_letters
