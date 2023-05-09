@@ -45,7 +45,7 @@ var _ = Describe("AuthController", func() {
         Expect(status).To(Equal(401))
 
         Expect(body.Status).To(Equal(401))
-        Expect(body.Code).To(Equal("unathorized"))
+        Expect(body.Code).To(Equal("unauthorized"))
         Expect(body.Message).To(Equal(""))
         Expect(body.Details).To(Equal([]ts.ErrorSchemaItem{}))
       },

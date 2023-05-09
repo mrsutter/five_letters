@@ -115,7 +115,7 @@ components:
           readOnly: true
           description: Error Code
           example: internal_server_error
-          enum: [unathorized, not_found, internal_server_error, bad_json, too_early, input_errors]
+          enum: [unauthorized, not_found, internal_server_error, bad_json, too_early, input_errors]
         message:
           type: string
           readOnly: true
@@ -301,14 +301,14 @@ paths:
               schema:
                 $ref: '#/components/schemas/User'
         '401':
-          description: Unathorized
+          description: unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
               example:
                 status: 401
-                code: unathorized
+                code: unauthorized
                 message: ""
                 details: []
         '500':
@@ -343,14 +343,14 @@ paths:
               schema:
                 $ref: '#/components/schemas/User'
         '401':
-          description: Unathorized
+          description: unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
               example:
                 status: 401
-                code: unathorized
+                code: unauthorized
                 message: ""
                 details: []
         '422':
@@ -677,14 +677,14 @@ paths:
                   attempts_count: 2
                   created_at: "2023-04-25T14:22:09Z"
         '401':
-          description: Unathorized
+          description: unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
               example:
                 status: 401
-                code: unathorized
+                code: unauthorized
                 message: ""
                 details: []
         '500':
@@ -718,14 +718,14 @@ paths:
                 attempts_count: 0
                 created_at: "2023-04-25T14:22:09Z"
         '401':
-          description: Unathorized
+          description: unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
               example:
                 status: 401
-                code: unathorized
+                code: unauthorized
                 message: ""
                 details: []
         '422':
@@ -796,14 +796,14 @@ paths:
                       - absence
                       - match
         '401':
-          description: Unathorized
+          description: unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
               example:
                 status: 401
-                code: unathorized
+                code: unauthorized
                 message: ""
                 details: []
         '404':
@@ -866,14 +866,14 @@ paths:
                       - absence
                       - match
         '401':
-          description: Unathorized
+          description: unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
               example:
                 status: 401
-                code: unathorized
+                code: unauthorized
                 message: ""
                 details: []
         '404':
@@ -942,14 +942,14 @@ paths:
                       - match
                       - match
         '401':
-          description: Unathorized
+          description: unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
               example:
                 status: 401
-                code: unathorized
+                code: unauthorized
                 message: ""
                 details: []
         '404':
