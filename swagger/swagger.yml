@@ -388,7 +388,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-  /api/v1/register:
+  /api/v1/auth/register:
     post:
       tags:
         - Auth
@@ -498,7 +498,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-  /api/v1/login:
+  /api/v1/auth/login:
     post:
       tags:
         - Auth
@@ -572,7 +572,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-  /api/v1/logout:
+  /api/v1/auth/logout:
     post:
       tags:
         - Auth
@@ -589,7 +589,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
-  /api/v1/refresh:
+  /api/v1/auth/refresh:
     post:
       tags:
         - Auth
